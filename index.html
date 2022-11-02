@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+
+    <script src="./scripts/input_validation.js" defer></script>
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="text-container">
+        <h1 class="page-heading">Learn to code by watching others</h1>
+        <p class="page-paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form-container">
+        <p class="try-it-free">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+        <form class="contact-form">
+          <div class="form-group">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              class="form-control"
+              placeholder="First Name"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="An exclamation mark inside a red circle, signifying a wrong email address"
+              class="error-icon"
+            />
+            <p class="error-message">First Name cannot be empty</p>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              class="form-control"
+              placeholder="Last Name"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="An exclamation mark inside a red circle, signifying a wrong email address"
+              class="error-icon"
+            />
+            <p class="error-message">Last Name cannot be empty</p>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              class="form-control"
+              placeholder="Email Address"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="An exclamation mark inside a red circle, signifying a wrong email address"
+              class="error-icon"
+            />
+            <p class="error-message">Looks like this is not an email</p>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              placeholder="Password"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="An exclamation mark inside a red circle, signifying a wrong email address"
+              class="error-icon"
+            />
+            <p class="error-message">Password cannot be empty</p>
+          </div>
+
+          <button type="submit" id="submit-button" class="submit-button">
+            Claim your free trial
+          </button>
+          <p class="terms-and-services">
+            By clicking the button, you are agreeing to our
+            <a href="#" target="_blank">Terms and Services</a>
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/spaprocki">spaprocki</a>.
+      </p>
+    </footer>
+  </body>
+</html>
